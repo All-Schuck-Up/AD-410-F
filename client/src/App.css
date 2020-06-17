@@ -92,7 +92,13 @@ ol li {
 }
 .doctorPicture {
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-color: cadetblue;
-  margin-top: 30px;
+    content: "Stay home, Stay safe...";
+    font-size: 60px;
+    color: aliceblue;
+    font-style: italic;
+    padding-left: 40px;
+    padding-top: 60px;
+  margin-top: 50px;
 }

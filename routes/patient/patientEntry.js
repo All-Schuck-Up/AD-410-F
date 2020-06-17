@@ -25,6 +25,13 @@ router.route('/patientEntry/:id').get((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
+router.route('/patient/search/:name').get((req, res) => {
+  PatientEntry
+      .find({'firstName': req.params.name})
+      .then(patientEntries => res.json(patientEntries))
+      .catch(err => res.status(400).json('Error: ' + err));
+});
+
 //route for getting all entries of 1st patient 
 router.route('/patientEntry/').get((req, res) => {
     PatientEntry

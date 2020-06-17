@@ -23,7 +23,7 @@ class Landing extends Component{
                             </div>
                         </form>
                     </div> 
-                    <div className="doctorPicture"></div>
+                    <div className="doctorPicture">Stay home, Stay safe...</div>
                     <a href="https://www.vecteezy.com/free-vector/medical-logo">Medical Logo Vectors by Vecteezy</a>
             </div>
     )}

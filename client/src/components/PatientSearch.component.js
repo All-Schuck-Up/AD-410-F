@@ -42,7 +42,7 @@ class PatientSearch extends React.Component {
               type="search"
               name="search"
               id="exampleSearch"
-              placeholder="Patient Last Name with first letter capital"
+              placeholder="Patient First Name with first letter capital"
               onChange={this.handleChange}
             />
          </FormGroup>

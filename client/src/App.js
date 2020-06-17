@@ -62,18 +62,18 @@ function App({ auth: { loading, user }, profile: { profile } }) {
             <Route exact path='/patient/login/:id'>
               <Navbar lastName={profile && profile.firstName}/>
               <CreateSymptom
-                patientId={profile && profile._id}
+                patientId="5ecaabd07dfcc538bce811fc"
                 lastName={profile && profile.lastName}
               />
             </Route>
             <Route exact path='/patient/:id/profile'>
               <Navbar lastName={profile && profile.firstName} />
-              <PatientProfile patientId={profile && profile._id} accountType={user && user.accountType} />
+              <PatientProfile patientId="5ecaabd07dfcc538bce811fc" accountType={user && user.accountType} lastName={profile && profile.firstName}/>
             </Route>
             <Route exact path='/patient/doctorNotes'>
               <Navbar lastName={profile && profile.firstName}/>
               <ProviderNote
-                patientId={profile && profile._id}
+                patientId="5ecaabd07dfcc538bce811fc"
                 lastName={profile && profile.lastName}
               />
             </Route>

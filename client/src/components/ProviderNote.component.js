@@ -77,7 +77,7 @@ class ProviderNote extends React.Component {
                    
                     <Button className="btn btn-primary" onClick={this.scheduleMeeting} style={{ marginBottom: '1rem' }}>Schedule a Zoom Meeting</Button>
                 </Form>
-                <Alert color="success">Past Notes for {this.props.lastName}</Alert>
+                <Alert color="success">Past Notes {this.props.lastName}</Alert>
                 </div>
                 <div className="mainDoctorNote">
                 {notes}
